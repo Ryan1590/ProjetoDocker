@@ -30,3 +30,4 @@ Delete
 
 * Ajude a propagar o conhecimento e mostre esse artigo ao máximo de pessoas que puder;
 * Se tiver alguma sugestão abra um pull request.
+* Se já tem conhecimento sobre orientação a objetos leia: https://devcontratado.com/blog/php/crud-php-orientado-a-objetos-mysql
