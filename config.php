@@ -6,10 +6,10 @@
 $host = 'http://localhost/conteudos/crud-php-mysql-procedural/';
 
 // db
-$db_name = 'crud';
-$db_host = 'localhost';
+$db_name = 'crud_db';
+$db_host = 'dbprojeto';
 $db_user = 'root';
-$db_pass = '';
+$db_pass = 'root';
 
 try {
   $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
