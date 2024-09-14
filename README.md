@@ -15,18 +15,18 @@ Desenvolvedores iniciantes com conhecimento básico em php e banco de dados.
 - Ou usar o docker
 - Inicie seus servidores de aplicação e banco de dados e abra o projeto no seu navegador.
 
-Telas do crud
+## Telas do crud
 
-## Create
+# Create
 <img src="./img/create.JPG" width="100%">
 
-## Read
+# Read
 <img src="./img/read.JPG" width="100%">
 
-## Edit
+# Edit
 <img src="./img/edit.JPG" width="100%">
 
-## Delete
+# Delete
 <img src="./img/delete.JPG" width="100%">
 
 
