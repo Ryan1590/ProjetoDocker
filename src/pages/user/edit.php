@@ -4,9 +4,25 @@ require_once '../../../config.php';
 require_once '../../../src/actions/user.php';
 require_once '../partials/header.php';
 
-$id = $_GET['id'] ?? null;
 
-$user = findUserAction($conn, $id);
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Captura os dados enviados pelo formulário
+    $id = $_POST['id'] ?? null;
+    $name = $_POST['name'] ?? null;
+    $email = $_POST['email'] ?? null;
+    $phone = $_POST['phone'] ?? null;
+
+    if ($id && $name && $email && $phone) {
+        
+        updateUserAction($conn, $id, $name, $email, $phone);
+    }
+} else {
+    // Se não for POST, capturamos o ID do GET
+    $id = $_GET['id'] ?? null;
+
+    // Busca o usuário pelo ID
+    $user = findUserAction($conn, $id);
+}
 
 ?>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">

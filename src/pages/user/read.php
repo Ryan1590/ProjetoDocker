@@ -1,4 +1,5 @@
 <?php
+ob_start(); // Inicia o buffer de saída
 require_once '../../../config.php';
 require_once '../../../src/actions/user.php';
 require_once '../../../src/modules/messages.php';
@@ -53,3 +54,4 @@ $users = readUserAction($conn);
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <?php require_once '../partials/footer.php'; ?>
+<?php ob_end_flush(); // Finaliza o buffer de saída e envia o conteúdo ao navegador ?>
