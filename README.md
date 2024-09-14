@@ -6,7 +6,7 @@ Crud php configurado docker
 
 ### 📌 A quem se destina
 
-Desenvolvedores iniciantes com conhecimento básico em php e banco de dados.
+Desenvolvedores iniciantes com conhecimento básico em php e banco de dados e docker 
 
 ### Como rodar
 
@@ -15,29 +15,27 @@ Desenvolvedores iniciantes com conhecimento básico em php e banco de dados.
 - Ou usar o docker
 - Inicie seus servidores de aplicação e banco de dados e abra o projeto no seu navegador.
 
-## Telas do crud
-
-# Create
+# Telas do crud
+## Create
 <img src="./img/create.JPG" width="100%">
 
-# Read
+## Read
 <img src="./img/read.JPG" width="100%">
 
-# Edit
+## Edit
 <img src="./img/edit.JPG" width="100%">
 
-# Delete
+## Delete
 <img src="./img/delete.JPG" width="100%">
 
 
 
-## Mensagens da operação
-
-# Mensagem Create
+# Mensagens da operação
+## Mensagem Create
 <img src="./img/messagecreate.JPG" width="100%">
 
-# Mensagem Edit
+## Mensagem Edit
 <img src="./img/messageedit.JPG" width="100%">
 
-# Mensagem Delete
+## Mensagem Delete
 <img src="./img/messageremove.JPG" width="100%">
