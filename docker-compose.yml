@@ -1,24 +1,25 @@
-version: '3'
+version: '3'  # Define a versão do Docker Compose.
 
 services:
-  dbprojeto:
-    image: mysql:5.7
+  dbprojeto:  # Serviço para o banco de dados MySQL.
+    image: mysql:5.7  # Utiliza a imagem MySQL versão 5.7.
     ports:
-      - "3307:3306"
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: crud_db
-      MYSQL_USER: crud_user
-      MYSQL_PASSWORD: crud_password
+      - "3307:3306"  # Mapeia a porta 3306 do container para a 3307 do host.
+    restart: always  # Configura para reiniciar o container automaticamente.
+    environment:  # Define variáveis de ambiente para o MySQL.
+      MYSQL_ROOT_PASSWORD: root  # Define a senha do usuário root.
+      MYSQL_DATABASE: crud_db  # Nome do banco de dados a ser criado.
+      MYSQL_USER: crud_user  # Nome do usuário MySQL.
+      MYSQL_PASSWORD: crud_password  # Senha do usuário MySQL.
 
-  php:
-      build: .
+  php:  # Serviço para o PHP.
+      build: .  # Constrói a imagem PHP a partir do Dockerfile no diretório atual.
       ports:
-        - "8080:80"
+        - "8080:80"  # Mapeia a porta 80 do container para a 8080 do host.
       volumes:
-        - ./:/var/www/html
-      restart: always
+        - ./:/var/www/html  # Monta o diretório atual no host para o container.
+      restart: always  # Configura para reiniciar o container automaticamente.
 
 volumes:
-  db_data:
+  db_data:  # Define um volume chamado db_data.
+

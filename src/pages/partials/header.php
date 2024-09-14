@@ -8,4 +8,3 @@
     <title>CRUD PHP - MYSQL</title>
 </head>
 <body>
-    
