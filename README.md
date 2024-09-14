@@ -14,3 +14,30 @@ Desenvolvedores iniciantes com conhecimento básico em php e banco de dados.
 - Em seu banco de dados, importe o sql presente na raiz do projeto; 
 - Ou usar o docker
 - Inicie seus servidores de aplicação e banco de dados e abra o projeto no seu navegador.
+
+Telas do crud
+
+## Create
+<img src="./img/create.JPG" width="100%">
+
+## Read
+<img src="./img/read.JPG" width="100%">
+
+## Edit
+<img src="./img/edit.JPG" width="100%">
+
+## Delete
+<img src="./img/delete.JPG" width="100%">
+
+
+
+## Mensagens da operação
+
+# Mensagem Create
+<img src="./img/messagecreate.JPG" width="100%">
+
+# Mensagem Edit
+<img src="./img/messageedit.JPG" width="100%">
+
+# Mensagem Delete
+<img src="./img/messageremove.JPG" width="100%">
