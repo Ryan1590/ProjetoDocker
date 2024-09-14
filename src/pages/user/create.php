@@ -1,10 +1,13 @@
 <?php
+ob_start(); // Inicia o buffer de saída
 require_once '../../../config.php';
 require_once '../../actions/user.php';
 require_once '../partials/header.php';
 
-if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["phone"]))
+// Verifica se os dados foram enviados pelo formulário
+if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["phone"])) {
     createUserAction($conn, $_POST["name"], $_POST["email"], $_POST["phone"]);
+}
 
 ?>
 
@@ -48,3 +51,5 @@ if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["phone"]))
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <?php require_once '../partials/footer.php'; ?>
+
+<?php ob_end_flush(); // Finaliza o buffer de saída e envia o conteúdo ao navegador ?>
