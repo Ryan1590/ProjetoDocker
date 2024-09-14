@@ -1,5 +1,4 @@
 <?php
-
 function printMessage($message) {
     if ($message=='success-create')
         return '<span class="text-success">Cadastrado com sucesso!</span>';

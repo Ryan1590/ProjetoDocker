@@ -4,7 +4,9 @@ require_once '../../../config.php';
 require_once '../../../src/actions/user.php';
 require_once '../../../src/modules/messages.php';
 require_once '../partials/header.php';
+
 $users = readUserAction($conn);
+$message = $_GET['message'] ?? null; // Captura a mensagem da URL
 
 ?>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -18,11 +20,12 @@ $users = readUserAction($conn);
         </div>
     </div>
 
+    <!-- Exibe a mensagem se existir -->
     <div class="row">
         <div class="col">
-            <?php if(isset($_GET['message'])): ?>
+            <?php if($message): ?>
                 <div class="alert alert-info">
-                    <?= htmlspecialchars($_GET['message']); ?>
+                    <?= printMessage($message); ?>
                 </div>
             <?php endif; ?>
         </div>
