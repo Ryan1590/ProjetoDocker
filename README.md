@@ -32,10 +32,10 @@ Desenvolvedores iniciantes com conhecimento básico em php e banco de dados e do
 
 # Mensagens da operação
 ## Mensagem Create
-<img src="./img/messagecreate.jpg" width="100%">
+<img src="./img/messagecreate.JPG" width="100%">
 
 ## Mensagem Edit
-<img src="./img/messageedit.jpg" width="100%">
+<img src="./img/messageedit.JPG" width="100%">
 
 ## Mensagem Delete
-<img src="./img/messageremove.jpg" width="100%">
+<img src="./img/messageremove.JPG" width="100%">
