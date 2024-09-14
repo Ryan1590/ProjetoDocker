@@ -17,25 +17,25 @@ Desenvolvedores iniciantes com conhecimento básico em php e banco de dados e do
 
 # Telas do crud
 ## Create
-<img src="./img/create.JPG" width="100%">
+<img src="./img/create.jpg" width="100%">
 
 ## Read
-<img src="./img/read.JPG" width="100%">
+<img src="./img/read.jpg" width="100%">
 
 ## Edit
-<img src="./img/edit.JPG" width="100%">
+<img src="./img/edit.jpg" width="100%">
 
 ## Delete
-<img src="./img/delete.JPG" width="100%">
+<img src="./img/delete.jpg" width="100%">
 
 
 
 # Mensagens da operação
 ## Mensagem Create
-<img src="./img/messagecreate.JPG" width="100%">
+<img src="./img/messagecreate.jpg" width="100%">
 
 ## Mensagem Edit
-<img src="./img/messageedit.JPG" width="100%">
+<img src="./img/messageedit.jpg" width="100%">
 
 ## Mensagem Delete
-<img src="./img/messageremove.JPG" width="100%">
+<img src="./img/messageremove.jpg" width="100%">
